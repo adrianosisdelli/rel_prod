@@ -82,7 +82,9 @@ Route::post('/report/01', function() {
 
 
 	$sql = $sql. ' order by h.Dt_Ocorr asc';
-	//var_dump($sql); die();
+	var_dump($sql); die();
+
+
 
 	$contratos = DB::select($sql);
 
