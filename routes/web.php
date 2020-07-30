@@ -81,10 +81,6 @@ Route::post('/report/01', function() {
 	$sql = str_replace('[data_final]', $_POST['data_final'], $sql);
 
 
-	$sql = $sql. ' order by h.Dt_Ocorr asc';
-	var_dump($sql); die();
-
-
 
 	$contratos = DB::select($sql);
 
